@@ -1,0 +1,26 @@
+.navbar-brand {
+    background-color: tomato;
+    text-align: center;
+    width: 100%;
+    height: 125px;
+    margin: auto;
+    font-size: 35px;
+    color: white;
+}
+
+.littleContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-header {
+    background-color: teal;
+    color: white;
+}
+
+.card {
+    margin: 20px;
+    display: inline-block;
+}
