@@ -8,7 +8,7 @@ test('creates an employee object', () => {
     expect(employee.email).toEqual(expect.any(String));
 });
 
-test('retrieve ALL employee data', () => {
+test('tests ALL alike employee data', () => {
     const employee = new Employee('James', 11, 'jcapado@gmail.com');
 
     expect(employee.dataName()).toEqual(expect.any(String));
@@ -16,5 +16,3 @@ test('retrieve ALL employee data', () => {
     expect(employee.dataEmail()).toEqual(expect.stringContaining(employee.email.toString()));
     expect(employee.dataRole()).toEqual("Employee");
 });
-
-// still need to write test for Engineer "gitHub" property and Intern "school" property
