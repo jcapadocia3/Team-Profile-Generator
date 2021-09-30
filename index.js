@@ -81,6 +81,7 @@ const addEmployee = () => {
         if (confirmAdd) {
           return addEmployee(teamArray);
         } else {
+          console.log(teamArray)
           return teamArray;
         }
     });
