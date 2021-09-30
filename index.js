@@ -1,7 +1,7 @@
 // const generateHTML = require("./src/generateHTML");
 // const fs = require("fs");
 const inquirer = require("inquirer");
-// const Manager = require("./lib/Manager.constructor");
+const Manager = require("./lib/Manager.constructor");
 // const Engineer = require("./lib/Engineer.constructor");
 // const Intern = require("./lib/Intern.constructor");
 
@@ -56,6 +56,34 @@ const addEmployee = () => {
         default: false,
       },
     ])
-};
 
-addEmployee()
+    .then((employeeData) => {
+
+        let { name, id, email, role, officeNum, gitHub, school, confirmAdd } =
+          employeeData;
+        let employee;
+      
+        if (role === "Manager") {
+          employee = new Manager(name, id, email, officeNum);
+          console.log(employee);
+      
+        // } else if (role === "Engineer") {
+        //   employee = new Engineer(name, id, email, gitHub);
+        //   console.log(employee);
+      
+        // } else if (role === "Intern") {
+        //   employee = new Intern(name, id, email, school);
+        //   console.log(employee);
+        }
+      
+        teamArray.push(employee);
+      
+        if (confirmAdd) {
+          return addEmployee(teamArray);
+        } else {
+          return teamArray;
+        }
+    });
+};
+      
+addEmployee();
