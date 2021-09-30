@@ -2,7 +2,7 @@
 // const fs = require("fs");
 const inquirer = require("inquirer");
 const Manager = require("./lib/Manager.constructor");
-// const Engineer = require("./lib/Engineer.constructor");
+const Engineer = require("./lib/Engineer.constructor");
 // const Intern = require("./lib/Intern.constructor");
 
 const teamArray = [];
@@ -67,9 +67,9 @@ const addEmployee = () => {
           employee = new Manager(name, id, email, officeNum);
           console.log(employee);
       
-        // } else if (role === "Engineer") {
-        //   employee = new Engineer(name, id, email, gitHub);
-        //   console.log(employee);
+        } else if (role === "Engineer") {
+          employee = new Engineer(name, id, email, gitHub);
+          console.log(employee);
       
         // } else if (role === "Intern") {
         //   employee = new Intern(name, id, email, school);
