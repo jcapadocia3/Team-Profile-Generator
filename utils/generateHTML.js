@@ -30,6 +30,22 @@ const createEngineer = function (engineer) {
     `;
 };
 
+const createIntern = function (intern) {
+  return `
+    <div class="card" style="width: 18rem">
+      <div class="card-header">
+        <h2>${intern.name}</h2>
+        <h3>Intern</h3>
+      </div>
+      <div class="card-body">
+        <p>ID: ${intern.id}</p>
+        <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
+        <p>School Attending: ${intern.school}</p>
+      </div>
+    </div>
+    `;
+};
+
 generateHTML = (data) => {
   htmlArray = [];
 
@@ -47,6 +63,12 @@ generateHTML = (data) => {
       const engineerCard = createEngineer(employee);
 
       htmlArray.push(engineerCard);
+    }
+
+    if (role === "Intern") {
+      const internCard = createIntern(employee);
+
+      htmlArray.push(internCard);
     }
   }
 
