@@ -1,10 +1,9 @@
-// const generateHTML = require("./src/generateHTML");
-// const fs = require("fs");
+const generateHTML = require("./utils/generateHTML");
+const fs = require("fs");
 const inquirer = require("inquirer");
 const Manager = require("./lib/Manager.constructor");
 const Engineer = require("./lib/Engineer.constructor");
 const Intern = require("./lib/Intern.constructor");
-
 const teamArray = [];
 
 const addEmployee = () => {
@@ -87,4 +86,26 @@ const addEmployee = () => {
     });
 };
       
-addEmployee();
+// addEmployee();
+
+const writeHTML = data => {
+  fs.writeFile('./dist/newINDEX.html', data, err => {
+      if (err) {
+          console.log(err);
+          return;
+      } else {
+          console.log("Team profile created -- Please refer to newINDEX.html")
+      }
+  })
+}; 
+
+addEmployee()
+.then(teamArray => {
+  return generateHTML(teamArray);
+})
+.then(htmlData => {
+  return writeHTML(htmlData);
+})
+.catch(err => {
+console.log(err);
+});
