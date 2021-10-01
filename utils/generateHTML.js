@@ -14,6 +14,22 @@ const createManager = function (manager) {
     `;
 };
 
+const createEngineer = function (engineer) {
+  return `
+    <div class="card" style="width: 18rem">
+      <div class="card-header">
+        <h2>${engineer.name}</h2>
+        <h3>Engineer</h3>
+      </div>
+      <div class="card-body">
+        <p>ID: ${engineer.id}</p>
+        <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+        <p>GitHub Username: ${engineer.gitHub}</p>
+      </div>
+    </div>
+    `;
+};
+
 generateHTML = (data) => {
   htmlArray = [];
 
@@ -25,6 +41,12 @@ generateHTML = (data) => {
       const managerCard = createManager(employee);
 
       htmlArray.push(managerCard);
+    }
+
+    if (role === "Engineer") {
+      const engineerCard = createEngineer(employee);
+
+      htmlArray.push(engineerCard);
     }
   }
 
