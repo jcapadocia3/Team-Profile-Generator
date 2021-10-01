@@ -3,7 +3,7 @@ const createManager = function (manager) {
     <div class="card" style="width: 18rem">
       <div class="card-header">
         <h2>${manager.name}</h2>
-        <h3>Manager</h3>
+        <h3><i class="fas fa-mug-hot"></i>  Manager</h3>
       </div>
       <div class="card-body">
         <p>ID: ${manager.id}</p>
@@ -19,7 +19,7 @@ const createEngineer = function (engineer) {
     <div class="card" style="width: 18rem">
       <div class="card-header">
         <h2>${engineer.name}</h2>
-        <h3>Engineer</h3>
+        <h3><i class="fas fa-tools"></i>  Engineer</h3>
       </div>
       <div class="card-body">
         <p>ID: ${engineer.id}</p>
@@ -35,7 +35,7 @@ const createIntern = function (intern) {
     <div class="card" style="width: 18rem">
       <div class="card-header">
         <h2>${intern.name}</h2>
-        <h3>Intern</h3>
+        <h3><i class="fas fa-user-graduate"></i>  Intern</h3>
       </div>
       <div class="card-body">
         <p>ID: ${intern.id}</p>
@@ -99,11 +99,7 @@ const generateTeamPage = function (employeeCards) {
 
   <body>
     <header>
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">My Team</span>
-        </div>
-      </nav>
+      <nav class="navbar-brand mb-0 h1" id="myTeam">My Team</nav>
     </header>
 
     <main class="bigContainer">
