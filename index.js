@@ -64,15 +64,12 @@ const addEmployee = () => {
       
         if (role === "Manager") {
           employee = new Manager(name, id, email, officeNum);
-          console.log(employee);
       
         } else if (role === "Engineer") {
           employee = new Engineer(name, id, email, gitHub);
-          console.log(employee);
       
         } else if (role === "Intern") {
           employee = new Intern(name, id, email, school);
-          console.log(employee);
         }
       
         teamArray.push(employee);
@@ -85,8 +82,6 @@ const addEmployee = () => {
         }
     });
 };
-      
-// addEmployee();
 
 const writeHTML = data => {
   fs.writeFile('./dist/newINDEX.html', data, err => {
