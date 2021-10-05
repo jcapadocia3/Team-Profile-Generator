@@ -4,8 +4,11 @@ const inquirer = require("inquirer");
 const Manager = require("./lib/Manager.constructor");
 const Engineer = require("./lib/Engineer.constructor");
 const Intern = require("./lib/Intern.constructor");
+
+// Empty team array for user input collected to be "pushed into"
 const teamArray = [];
 
+// Begin prompts from inquirer to take user input
 const addEmployee = () => {
   return inquirer
     .prompt([
@@ -56,12 +59,15 @@ const addEmployee = () => {
       },
     ])
 
+    // Creates employees based on user input and selections
     .then((employeeData) => {
 
+        // All employee data possibilities
         let { name, id, email, role, officeNum, gitHub, school, confirmAdd } =
           employeeData;
         let employee;
       
+        // Depending on user choice for employee "role," an employee is created using the class constructors, limited to specific data for each employee type
         if (role === "Manager") {
           employee = new Manager(name, id, email, officeNum);
       
@@ -72,8 +78,10 @@ const addEmployee = () => {
           employee = new Intern(name, id, email, school);
         }
       
+        // Push new employee created into empty array
         teamArray.push(employee);
       
+        // If user chooses to add another employee to the team, rerun the inquirer prompts
         if (confirmAdd) {
           return addEmployee(teamArray);
         } else {
@@ -83,6 +91,7 @@ const addEmployee = () => {
     });
 };
 
+// Begin function to create .html file
 const writeHTML = data => {
   fs.writeFile('./dist/newINDEX.html', data, err => {
       if (err) {
@@ -94,6 +103,7 @@ const writeHTML = data => {
   })
 }; 
 
+// Call on functions from beginning to end of index.js code
 addEmployee()
 .then(teamArray => {
   return generateHTML(teamArray);
