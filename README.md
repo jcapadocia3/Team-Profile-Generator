@@ -31,10 +31,10 @@ The purpose of this project is to allow a user to generate a Team Profile for th
 <img src="./images/finalproduct.png" alt="Final Product" width="800">
 
 - Walkthrough of how the app works via the command line<br>
-<a target="_blank" href="https://watch.screencastify.com/v/ohTzBjC4r7mOxOqpc7wf">Click Here!</a>
+<a target="_blank" href="https://watch.screencastify.com/v/ohTzBjC4r7mOxOqpc7wf">Click Here</a>
 
 - Walkthrough of tests created for the constructors in project<br>
-<a target="_blank" href="https://watch.screencastify.com/v/3DE0k7kSpNX7HTckZy1C">Click Here!</a>
+<a target="_blank" href="https://watch.screencastify.com/v/3DE0k7kSpNX7HTckZy1C">Click Here</a>
 
 ## User Story
 ```md
@@ -86,6 +86,6 @@ THEN I exit the application, and the HTML is generated
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Questions
-- GitHub Profile: <a href="https://github.com/jcapadocia3">Click Me!</a><br>
+- GitHub Profile: <a href="https://github.com/jcapadocia3">jcapadocia3</a><br>
 - My Email: james.capadocia@gmail.com<br>
 ***Please feel free to contact me for more information***
