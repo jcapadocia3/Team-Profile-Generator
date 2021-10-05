@@ -16,9 +16,9 @@ Please refer to the newINDEX.html file in the repo to see the final product crea
 
 ## Table of Contents
 1. [Description](#Description)
-2. [Video Walkthrough](#Video-Walkthrough)
+2. [Final Product Image and Video Walkthroughs](#Final-Product-Image-and-Video-Walkthroughs)
 3. [User Story](#User-Story)
-4. [Installation & Instructions](#Installation-&-Instructions)
+4. [Installation and Instructions](#Installation-and-Instructions)
 5. [License](#License)
 6. [Questions](#Questions)
 
@@ -65,7 +65,7 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-## Installation & Instructions
+## Installation and Instructions
 - Download app files via GitHub
 - Open GitBash/Terminal to access the command line
 - Via the command line, install Jest Package into the working directory (used to test the constructors for the project)
