@@ -26,7 +26,7 @@ const createEngineer = function (engineer) {
       <div class="card-body">
         <p>ID: ${engineer.id}</p>
         <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-        <p>GitHub Username: ${engineer.gitHub}</p>
+        <p>GitHub Username: <a target=_blank href="https://github.com/${engineer.gitHub}">${engineer.gitHub}</a></p>
       </div>
     </div>
     `;
