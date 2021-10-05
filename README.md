@@ -25,7 +25,10 @@ Please refer to the newINDEX.html file in the repo to see the final product crea
 ## Description
 The purpose of this project is to allow a user to generate a Team Profile for the conrtibutors taking part in a project. This project will run through Node via the command line and bring the user through a series of prompts to complete information regarding these team members. Once all prompts are completed, an HTML file will automatically be created with the user's input about the team members.
 
-## Video Walkthrough
+## Final Product Image and Video Walkthroughs
+
+- Image of final product website created<br>
+<img src="./images/finalproduct.png" alt="Final Product" width="800">
 
 - Walkthrough of how the app works via the command line<br>
 <a target="_blank" href="https://watch.screencastify.com/v/ohTzBjC4r7mOxOqpc7wf">Click Here!</a>
