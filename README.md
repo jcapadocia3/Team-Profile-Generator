@@ -28,7 +28,7 @@ The purpose of this project is to allow a user to generate a Team Profile for th
 ## Video Walkthrough
 
 - Walkthrough of how the app works via the command line<br>
-<a target="_blank" href="https://watch.screencastify.com/v/DOYcboTFAbRUEizGyvhY">Click Here!</a>
+<a target="_blank" href="https://watch.screencastify.com/v/ohTzBjC4r7mOxOqpc7wf">Click Here!</a>
 
 - Walkthrough of tests created for the constructors in project<br>
 <a target="_blank" href="https://watch.screencastify.com/v/3DE0k7kSpNX7HTckZy1C">Click Here!</a>
