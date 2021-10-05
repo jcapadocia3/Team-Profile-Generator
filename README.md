@@ -8,11 +8,11 @@ https://github.com/jcapadocia3/Team-Profile-Generator
 
 ## Disclaimer
 
-Currently, only one GitHub link under the Enigneer name "James" is a working link in which it will redirect the user to a proper GitHub profile (my GitHub profile) when clicked. All other Engineers will have a working link but the link will not lead to an active GitHub profile as only placeholders were input for these "fake" employees.
-
 Please refer to the newINDEX.html file in the repo to see the final product created by the code as shown in the Video Walkthroughs.
 
 ***The frameworkINDEX.html is intended to write and test code for what the final product should look like before implementing the code in the generateHTML.js file.***
+
+Currently, only one GitHub link under the Enigneer name "James" is a working link in which it will redirect the user to a proper GitHub profile (my GitHub profile) when clicked. All other Engineers will have a working link but the link will not lead to an active GitHub profile as only placeholders were input for these "fake" employees.
 
 ## Table of Contents
 1. [Description](#Description)
