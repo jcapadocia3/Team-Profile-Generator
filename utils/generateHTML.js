@@ -1,3 +1,4 @@
+// Code to create a manager card on .html generated
 const createManager = function (manager) {
   return `
     <div class="card" style="width: 18rem">
@@ -14,6 +15,7 @@ const createManager = function (manager) {
     `;
 };
 
+// Code to create an engineer card on .html generated
 const createEngineer = function (engineer) {
   return `
     <div class="card" style="width: 18rem">
@@ -30,6 +32,7 @@ const createEngineer = function (engineer) {
     `;
 };
 
+// Code to create an intern card on .html generated
 const createIntern = function (intern) {
   return `
     <div class="card" style="width: 18rem">
@@ -46,9 +49,11 @@ const createIntern = function (intern) {
     `;
 };
 
+// Begin pushing array to .html file
 generateHTML = (data) => {
   htmlArray = [];
 
+  // Begin loop for all employees added via user input to distinguish what role was selected and what employee card should be created
   for (let i = 0; i < data.length; i++) {
     const employee = data[i];
     const role = employee.dataRole();
@@ -72,12 +77,14 @@ generateHTML = (data) => {
     }
   }
 
+  // Begin joining all employee cards created into one string
   const employeeCards = htmlArray.join("");
 
   const generateTeam = generateTeamPage(employeeCards);
   return generateTeam;
 };
 
+// Code to create .html framework and where employee cards created will be pushed into
 const generateTeamPage = function (employeeCards) {
   return `
     <!DOCTYPE html>
